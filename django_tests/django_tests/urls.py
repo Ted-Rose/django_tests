@@ -16,7 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from dropdown_list import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('dropdown_list/', views.home, name='home'),
+    path('selected_input/', views.selected_input, name='selected_input'),
 ]
